@@ -1,10 +1,12 @@
 <body>
-    <div id="header">
-        <div id="logo-searsh-container">
-            <img  id="log" src="patitacat.jpg" width="50"/>
-            <input type="text" placeholder="Search..."/>
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo-searsh-container">
+                <img  id="log" src="patitacat.jpg" width="50"/>
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <button> Log in </button>
         </div>
-        <button> Log in</button>
     </div>
 
     <div id="main-section-continer">
@@ -49,21 +51,20 @@
         </div>
     </div>
 
-    <div>
+    <div id="footer">
         <p>This is the footer</p>
     </div>
 </body>
 
 <style>
+    body{
+        background-color: rgba(250, 237, 243, 0.59);
+        margin: 0;
+    }
 
     a {
         color: palevioletred;
         font-size: 20px;
-    }
-
-    div {
-        border: 1px solid powderblue;
-        margin: 5px;
     }
 
     .article-info{
@@ -74,12 +75,20 @@
     #main-section-continer {
         display: flex;
         width: 80%;
-        margin: auto;
+        margin: 15px auto;
+    }
+
+    #header-wrapper{
+        background-color: white;
     }
 
     #header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
     }
 
     #logo-search-container{
@@ -90,16 +99,50 @@
     #header input{
         width: 250px;
         margin-left: 10px;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid rgb(226, 197, 202);
+        width: 250px;
 
     }
-
+ 
     #article-section{
         width: 70%;
+        background-color: white; 
+    }
+
+    #article-section div{
+        padding: 15px;
     }
 
     #side-section{
         width: 30%;
+        margin-left: 15px ;
     }
 
+    #side-section div {
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 15px;
+    
+    }
+
+    #footer {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    button{
+        font-size: 18px;
+        padding: 10px, 20px;
+        color: rgb(221, 132, 147);
+        border: 1px solid rgb(226, 197, 202);
+        border-radius: 5px;
+        background-color: white;
+
+    }
 
 </style>

@@ -241,10 +241,56 @@ Attribures for flex items
 
 The flex item properties are:
 - Order 
-- Flex-grow
+- Flex-grow: defines how much space it should take realtive to the rest to the flex items. 
+Value is a number Default is 0
 - Flex-shrink
 - Flex-basis
 - Flex
 - Align-self
 
+### The auto value
 
+Used to center the element within its container. 
+The element takes up the specified with, and the remaining space will be split equally between the left and rigth margins. 
+
+
+# Background colors
+
+## Padding Attribute
+
+Use to create space around an element's content inside of any defined borders. 
+
+## Margin vs padding
+- Margin: 
+    Space around an element's border
+    Space outside an element
+- Padding:
+    Space between an element's border and the content.
+    Space inside an element. 
+### User-agent stylesheet
+User-agent = browser. Browsers have basic style sheets that five default styles to any document. 
+Some differences exist between browsers. 
+
+
+# Styling for header 
+
+- Justify-content
+Align the flex items horizontally
+
+- Align-items
+Align the flex items vertically
+
+
+# Semantic elements
+
+- <header> 
+Represetns container for introductory content or navigational links. 
+
+-  <article>
+Should make sense on its own. Examples: forum, blog post, news sotry ext. 
+
+- <aside>
+Defines content aside form the page content.
+
+- <footer>
+Defines a footer for a document or section.
