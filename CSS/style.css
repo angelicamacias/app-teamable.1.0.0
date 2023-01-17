@@ -1,0 +1,119 @@
+
+body{
+    background-color: rgba(250, 237, 243, 0.59);
+    margin: 0;
+}
+
+a {
+    color: palevioletred;
+    font-size: 20px;
+}
+
+.article-info{
+    color: plum;
+
+}
+
+#main-section-continer {
+    display: flex;
+    width: 80%;
+    margin: 15px auto;
+}
+
+#header-wrapper{
+    background-color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+}
+
+#logo-search-container{
+    display: flex;
+
+}
+
+#header input{
+    width: 250px;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 197, 202);
+    width: 250px;
+
+}
+
+#article-section{
+    width: 70%;
+    background-color: white; 
+}
+
+#article-section div{
+    padding: 15px;
+}
+
+#side-section{
+    width: 30%;
+    margin-left: 15px ;
+}
+
+#side-section div {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+#footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    font-size: 18px;
+    padding: 10px, 20px;
+    color: rgb(221, 132, 147);
+    border: 1px solid rgb(226, 197, 202);
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+#hide-btn{
+    font-size: 18px;
+    padding: 10px, 20px;
+    color: rgb(186, 112, 124);
+    border: 1px solid rgb(226, 197, 202);
+    border-radius: 5px;
+    background-color: white;
+}
+
+#save-btn{
+    color: rgb(218, 144, 177);
+    border: 1px solid pink;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#post-form-container{
+    max-width: 300px;
+    padding: 10px;
+    margin: auto;
+    display: none;
+}
+#post-form-container input, textarea{
+    width: 100%;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+       
+}

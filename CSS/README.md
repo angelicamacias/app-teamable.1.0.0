@@ -294,3 +294,108 @@ Defines content aside form the page content.
 
 - <footer>
 Defines a footer for a document or section.
+
+
+
+NOTE: Benefits of external CSS file 
+- Better overview
+- Extenal CSS files could be reused for different HTML pages, in cas of same styling. 
+- External CSS files can be cached by the browser, which increases performance of your website. 
+======================================================================
+
+## <head>
+A container for metadata about the website. 
+Is not displaued on the website. 
+    -Title
+    -Description 
+    -Styles
+    ...
+## <title>
+Defines a title name for your webpage
+Shoen in: the browser's title bar of when added to favorites 
+Very important for search engine optimization (SEO)
+Use descriptive title, not just a list of words. 
+
+## <link>
+Used to define a link to an external resource 
+
+**rel = required**
+Specifies the relation of a linked resource. 
+
+**href = required**
+Specifies the location of the linked document
+
+### Linking stylesheets
+
+Can be our own stylesheet
+Or use publicly available ones
+
+
+### Bootstrap
+
+A free CSS framework 
+Contains HTML, CSS and JS-based design templates, which you can use in you website.
+
+# Favicon
+short for favorite icon 
+it's a small 16*16 pixel icon 
+An icon associated with a particular website used on web browsers.
+
+# <meta>
+Defines metadata about an HTML document
+Not displayed on the page, but machine parasble
+
+# <html>
+The root element, holding all the content of an HTML docuement. 
+Tip: include the lang attribute to define the language of your web page (for serach engine)
+
+
+
+# Button
+
+## Function invaction
+The code inside a function execute only when "something" invokes (calls) the function. 
+1- When it is invoked form JS code
+2- When an event occurs (like a user click on a button)
+
+### onclick event
+
+The event occurs when the user clicks on the element.
+
+## Style button on hover 
+## :hover selector
+Used to slect elements when you mouse over them. 
+
+
+# Write "create post" form
+
+The form element is a container for different types of input elements 
+
+<form>
+    <input>
+    <label>
+    <slect>
+    <option>
+    ...
+</form>
+
+
+## <label>
+Define a text label for the <input> tag
+To tie the elements together: 
+**for** attribute in label 
+**id** attribute of input field
+
+# DOM Document Object Model 
+ 
+Document Object 
+Ecah HTML document that gets loaded into a window becomes a document object. 
+It's the root node of the HTML document, containing the contests of the page. 
+Document object with it you can access and modify all document content
+
+## Add buttons to the form 
+
+### Required attribute
+
+A boolean attribute
+When present, it specifies that input field must be filled out before submitting the form 

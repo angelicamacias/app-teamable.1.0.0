@@ -1,0 +1,22 @@
+var fullNames = ["Anna Smith", "Juan Carrillo", "Billy Martinez"]
+var firstAndLastNames = []
+
+for (fullName of fullNames) {
+    var names = fullName.split(/\s+/)
+    var firstAndLastNames = {
+        firstName: names[0],
+        lastName: names[1]
+    }
+}
+
+==================================================================
+1) Array with full names
+2) We split each full name into an array of firstname and lastname 
+        "Anna Smith" => ["Anna", "Smith"]
+                            0       1
+
+3) Create an object our of it 
+    {
+        firstName: "Anna"
+        lastName: "Smith"
+    }

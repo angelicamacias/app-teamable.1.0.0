@@ -1,12 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Only White</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta name="keywords" content="white, cat, paws">
+    <meta name="description" content="Content about Blanquito">
+    <script src="code.js"> </script>
+
+</head>
 <body>
     <div id="header-wrapper">
         <div id="header">
             <div id="logo-searsh-container">
                 <img  id="log" src="patitacat.jpg" width="50"/>
+        
                 <input type="text" placeholder="Search..."/>
             </div>
-            <button> Log in </button>
+            <button onclick="handleCreatePost()"> Log in </button>
         </div>
+    </div>
+
+    <div id="post-form-container">
+        <form>
+            <label><b>Title</b></label>
+            <input type="text" placeholder="Enter title" >
+            <label><b>Description</b></label>
+            <input type="text" placeholder="Enter description">
+            <label><b>Post</b></label>
+            <textarea placeholder="Your post..." ></textarea>
+            <button id="hide-btn" onclick="hidePostForm()"> Hide form </button>
+            <button id="save-btn"> Save form </button>
+        </form>
+
     </div>
 
     <div id="main-section-continer">
@@ -55,94 +82,5 @@
         <p>This is the footer</p>
     </div>
 </body>
-
-<style>
-    body{
-        background-color: rgba(250, 237, 243, 0.59);
-        margin: 0;
-    }
-
-    a {
-        color: palevioletred;
-        font-size: 20px;
-    }
-
-    .article-info{
-        color: plum;
-
-    }
-
-    #main-section-continer {
-        display: flex;
-        width: 80%;
-        margin: 15px auto;
-    }
-
-    #header-wrapper{
-        background-color: white;
-    }
-
-    #header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        margin: auto;
-
-    }
-
-    #logo-search-container{
-        display: flex;
-
-    }
-
-    #header input{
-        width: 250px;
-        margin-left: 10px;
-        padding: 10px;
-        font-size: 18px;
-        border-radius: 5px;
-        border: 1px solid rgb(226, 197, 202);
-        width: 250px;
-
-    }
+</html>
  
-    #article-section{
-        width: 70%;
-        background-color: white; 
-    }
-
-    #article-section div{
-        padding: 15px;
-    }
-
-    #side-section{
-        width: 30%;
-        margin-left: 15px ;
-    }
-
-    #side-section div {
-        background-color: white;
-        padding: 15px;
-        margin-bottom: 15px;
-    
-    }
-
-    #footer {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    button{
-        font-size: 18px;
-        padding: 10px, 20px;
-        color: rgb(221, 132, 147);
-        border: 1px solid rgb(226, 197, 202);
-        border-radius: 5px;
-        background-color: white;
-
-    }
-
-</style>
