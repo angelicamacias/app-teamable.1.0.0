@@ -211,8 +211,6 @@ Downloading: Obtatining a copy from internet
 Installing: Giving insturctions to take the downloaded info and update the OS
 
 
--------------------
-
 cURL
 
 Client URL 
@@ -222,3 +220,77 @@ CLI tool that enables you to download or send data over the internet
 
 1.- Download the install.sh file with cURL 
 2.- Execute install.sh file to actually install homwbrew on our computer
+=-----
+
+Install packages
+
+if we want a specyfic version then: 
+```
+npm install validator@13.7.0
+```
+if dont, just
+```
+npm install validator
+```
+And here we will have the last version 
+
+
+## node_modules
+
+Packages are put in ./node_modules folder of the current package root.
+
+It's just a folder created by npm and a way of tracking each package you intall locally
+
+The module system is a fundamental part of how Node.js applications are written and strucured.
+
+A module is a self-contained file or directory of related code, which can be included.
+
+Makes the code more managaeable:
+Instead of having 1 big file, split the code up in separate files.
+
+Its call "module" because youre building a modular application with it. 
+
+## package.json
+
+json = Java Script Object Notation 
+
+Syntax is derived from JavaScript object notation, but JSON is text only. 
+
+It's a lightweight format for storing and transporting data
+
+.json **Provide:**
+
+- Easy syntax, human-readable text
+- Easy to read for programming languages
+
+
+JSON is language-independent, but heavily used in JavaScritp
+JSON format is used for all types of configuration data
+
+```
+{
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
+```
+
+JSON syntax is subset of the JavaScript syntax
+JSON data is written as name/value pairs (aka key-value pairs)
+
+
+JSON {"name":"Mike"}
+JavaScript {name:"Mike"}
+
+
+## package.json File
+
+The heart of any JavaScript project
+
+It holds various metadata relevant to the projecto and used to manage the project's dependencies scripts, version and more
+Dependencies property lists all the required packages for your application to function. 
+
+### charset Attribute
+
+Specifies the character encoding for the HTML document
+It is recommended to use the UFT-8 character set, which covers almost all of the characters and symbols in the world. 
