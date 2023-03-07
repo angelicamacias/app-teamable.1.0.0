@@ -68,3 +68,85 @@ After deleting them from the root folder, run the following commands
 npm cache clean --force
 npm install
 npm run serve
+
+## commands for Vue.js
+
+- Serve command
+    Compiles or transpiles Vue.js to vanilla JavaScript
+    Starts a dev server and serves the application to the browser 
+
+
+## Basic Folder structure
+
+Auto-generated folder, containing all installed libraries for our app
+
+- Source folder: It contains all the vue.js components and JS files
+- Public folder: Index file is located here as well as any other static assents 
+
+### npm scripts
+
+Convenient way to bundle common shell commands for your project. 
+
+Benefit: Commands are shared amongst everyone using the codebase, ensuring that everyone is using the same command with same configuration options.
+
+for run the pacakage: 
+---> npm run serve 
+
+## Vs structure
+
+In Vue.js you have to or it's the best practice to structure your code into small sections. 
+
+Components allow us to split the UI into independent and reusable pices. 
+
+Allows us to think about each pices in isolation 
+
+## Register a component
+
+A Vue component needs to be "registered" so that Vue knows where to locate its implementation when it is encountered in a template. 
+The registred component is only available in the current component (=local registration)
+
+# Parameterize the values
+
+### Parameterize our components
+
+This makes our components reusable 
+
+### Text interpolation 
+
+- Double braces  define placeholders for data
+- The most basic form of data binding
+- The double curly braces will be replaced with the value the "title" property pased in to the component.
+
+
+### Note:
+
+If i want to use this component what information do I have to pass?
+
+So that component works because if you do not pass this title, you get an error that there is this information missing. 
+Where it's just not going to display in the browser. When you have 230 parameters that you have to pass, it's way easier to see, what you need to pass when it's just cleanly listed. 
+
+So we have a title, we have a name... whatever, so justk looking at these properties field and just of all tha's the name, so ehat's already information, how to huse that components, adn these are the properties that it expects or these are the components, that you have to impor. 
+So this basically is an informaiton of, how to use this custom element. 
+
+### Why do I have to parametrize it? 
+
+Because you can reuse the same element for different cases.
+
+###  click button 
+
+we are in vue.js and not just JavaScript and HTML, so that's going to be specific to vue.js. So want to call a function whenever a buttom is clicked, we have to tie that click event using it click:
+
+```
+@click=
+```
+we have this at symbole and then click and then whatever the name of the function is that, we want to call whenever a click event happens on the button:
+```
+@click="handleClick()"
+```
+So this is the function that we call if is clicked the button.
+
+Then in the attribute call methods, is where we define any functions that we use within this template. 
+
+### Abstract
+
+ 
