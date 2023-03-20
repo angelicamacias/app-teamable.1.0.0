@@ -27,8 +27,11 @@ Release fo software
 ## WATERFALL
 
 1.- Requirements: Plan everything beforehand
+
 2.- Development: Developers code complete app
+
 3.- Testing: Testing after everything has developed
+
 4.- Operations: Huge preparation 
 
 ## Agile
