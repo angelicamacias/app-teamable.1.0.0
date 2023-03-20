@@ -9,7 +9,7 @@ System administrator
 Programming 
 - Software is programed by developers
 - In different progamming languages e.g. java, Python, javaScript
-- ONe tame per app or per facture
+- One team per app or per facture
 - New functionallty
 - Fix bugs
 
