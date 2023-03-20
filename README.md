@@ -13,7 +13,7 @@ Programming
 - New functionallty
 - Fix bugs
 
-Softeate Testing
+Software Testing
 - Test the new features
 - Test the old code/functionality
 - Testing is done by developers and dedicated tester
