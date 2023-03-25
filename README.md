@@ -9,11 +9,11 @@ System administrator
 Programming 
 - Software is programed by developers
 - In different progamming languages e.g. java, Python, javaScript
-- ONe tame per app or per facture
+- One team per app or per facture
 - New functionallty
 - Fix bugs
 
-Softeate Testing
+Software Testing
 - Test the new features
 - Test the old code/functionality
 - Testing is done by developers and dedicated tester
@@ -27,8 +27,11 @@ Release fo software
 ## WATERFALL
 
 1.- Requirements: Plan everything beforehand
+
 2.- Development: Developers code complete app
+
 3.- Testing: Testing after everything has developed
+
 4.- Operations: Huge preparation 
 
 ## Agile
