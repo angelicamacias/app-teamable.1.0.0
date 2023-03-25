@@ -315,3 +315,120 @@ Using a cracter ^ sign means that we can accept minor an patch releases, but not
 
 Used to lock dependencies to a specific version number 
 Allows future developers to install the same dependencies with exact same version in the project. 
+
+
+### Necessary dependecies for Vue App 
+
+Vue > Vue.js freamework
+core-js > Ensures that JS code works on all browsers and browser versions
+compiler > compiling Vue.js to vanilla JS
+cli-service > providing vue.js CLI commands build, serve. 
+
+# Create UI with VueJs
+UserInterfase
+
+
+
+### npm install 
+npm install will find package.json file, see that we have added some dependencies and it will basically just go  ahead and download all of them and create node modules folder automatically and put those downloaded libraries in there. 
+
+## Create basic vue.js structure 
+Root componment -> App.vue: Parent component of the app containing all child components. 
+
+index.html: single div element to mount the vue component into 
+
+main.js: Create application instance and mount the root component into the DOM 
+
+
+## error
+
+'./src/main.js': looking for thear structure of having a source folder 
+
+"../" ----> "./"
+
+
+## Declaring component's state and bind data with "v-bind"
+
+## data function
+Used to declare the reactive state of component. 
+Return the initial state
+It's a JS object that will be made reactive by Vue, when the functions is called on creation of the component. 
+
+---> Reactivity meaning: when you modify the value of them, the corresponding view updates. 
+
+ But each time it uses a separate component and also creates a new instance. When we use a data function at that time each instance maintains a separate copy of the return data object.
+
+
+## Declaring methods and bind with "v-on"
+
+
+methods functions
+
+Used to add functions to a component instance 
+
+## v-on or @
+
+Another built-in special attributes that vue provies 
+
+@ is shorthand for "v-on"
+
+Attaches an avent listener to the element
+
+### Attribute bindings
+
+To bind attributes, we use v-bind, v-on 
+We can't use mutach {{}} syntax
+
+### Text interplation 
+
+Use mutache syntax to vind the values
+
+
+### two-way binding on form input elements
+
+difference between vanilla js and javascript freamwork (like vue js)
+
+Is that the freameworks make it actually easier to communicate with HTML code to connect to the HTML code. 
+IN this pure JavaScript, you have to use this document objecto and basically go tho
+
+
+### 2 core features of Vue 
+
+--> Declarative rendering
+    Vue extends standard HTML with a template syntax that allows us to declaratively describe HTML output based on JavaScript state
+
+--> Reactivity
+    Vue automatically tracks JavaScript state changues and efficiently updates the DOM when changes happen. 
+
+Template syntax
+
+Under the hood, vue complies the templates into highly-optimized JavaScript code 
+
+One of those funtionalities is that on the input field, on this input element. 
+
+### v-model
+Updates the template whenever the model (data) changes and updates the model whenever the template changes. 
+It reduces the complexity of keeping user input conistent with the application data model. 
+
+
+## Toggle element visibility with "v-show"
+
+### v-show
+
+Toggle the element visibility depending if the value is true or false... "display the element or not"
+
+
+creates a two-way binding
+
+It binds the value of the input element to the property of the component's data. 
+
+
+It's comon to use "is" or "has" variable names for boolean variables
+
+In dara object, you define the initial values
+These values are updated later, based on the changes. 
+
+**this** refers to the component instance 
+
+ 
+  

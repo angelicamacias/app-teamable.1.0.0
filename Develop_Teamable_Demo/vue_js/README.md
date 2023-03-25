@@ -75,6 +75,16 @@ npm run serve
     Compiles or transpiles Vue.js to vanilla JavaScript
     Starts a dev server and serves the application to the browser 
 
+note: see what the name of the command is or the script you can jus do npm, run name of the script and that's it
+
+
+Vanilla:
+In computer science, vanilla is the term used to refer when computer software and sometimes also other computing-related systems like computer hardware or algorithms are not customized from their original form.
+
+Custom software development:
+Is the process of designing , creating, deploying and ma
+
+
 
 ## Basic Folder structure
 
@@ -147,6 +157,15 @@ So this is the function that we call if is clicked the button.
 
 Then in the attribute call methods, is where we define any functions that we use within this template. 
 
-### Abstract
-
+### Abstract 
  
+ Building our website task by task
+
+ 1) Develop frontend of app
+    1st version UI with vanilla JavaScript 
+    2nd version UI with a JS framework
+2) Devlop backend of app 
+3) Create and connect database
+
+# Use Vue in teamable app 
+We're going to use vue.js freamework to develop our team able application. 
