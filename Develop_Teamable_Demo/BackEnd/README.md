@@ -462,3 +462,14 @@ With await keyword, the actual reponse is assigned to our variable once the requ
 
 Extracts the body portion of an incoming request, parses the JSON dara and exposes it on req.body 
 
+### app.use(middleware)
+
+app.use() let's you register middleware or a chain of middlewares
+
+These are executed vefore the end route
+
+## Get data from backend
+
+get data from backend
+
+

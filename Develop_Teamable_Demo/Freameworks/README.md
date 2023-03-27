@@ -430,5 +430,91 @@ These values are updated later, based on the changes.
 
 **this** refers to the component instance 
 
- 
-  
+ ## Server frontend
+
+ ### "serve" command
+ - Compiles Vue.js into JavaScript
+ - Starts a dev server 
+
+ ### "build" command
+
+ Produces a production-ready bundle in the /dist directory
+ compiles Vue into JS and manifes the JS/CSS/HTML 
+
+ HTML/CSS/JS is manified 
+ Minification = Process of minimizing code by removing any unnecessary characters, spaces etc
+
+ Why? to reduce load times, minified versions reduce file sizes dramatically 
+
+
+### created()
+
+Is called when the component instance was created 
+
+# Application Flow 
+
+- Created() gets called, when app component is created
+- Calling fetchUserProfile() function 
+- Which makes the HTTP request to the backend
+- Backend will send back the user data
+- We set or update the component's state with the user data 
+
+
+# Send updated data to backend 
+
+
+connection URL / mongodb://localhost:27017
+
+mongodb             The protocol
+localhost           The hostname or ip address
+27017               The port number 
+
+
+## Create a new mongo client
+
+Creates a new client that can talk to the mongo server to the URL we provide
+We can use that client object and use its methods to connect and interact with the server 
+
+## Logic
+
+Access payloead from request
+Chech if payloead is empty? 
+    - if true => send error reponse
+    - if false => 
+        1-save dara into DB
+        2-send reponse 
+
+
+### Unique "id" field
+
+Each document stored in a collection requires a unique_id field
+If not provided, the MongoDB driver automatically generates an id for the _id field. 
+
+### insertOne()
+
+Inserts a single document into a collection
+It's only for insetion not for updating documents 
+
+
+### deleteOne()
+
+Removes a single document from a collection 
+{} includes the filter or deletion criteria
+
+
+### updateOne()
+
+Updates a single document within the collection based on the filter
+
+1st paramter: filter = the slection criteria for the update
+2nd paramter: update = the modifications to apply 
+
+
+
+
+
+
+
+
+
+

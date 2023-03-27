@@ -1,5 +1,5 @@
 <template>
-    <div v-show="!isEditMode" id="display-view">
+    <div v-show="!isEditMode">
         
         <h1> User profile </h1> 
         <img :src="image">
@@ -46,19 +46,53 @@ export default {
     data() {
         return {
             image: image, 
-            name: "Billy Martinez",
-            email: "billy.martinez@gmail.com",
-            interests: "coding", 
+            name: "",
+            email: "",
+            interests: "", 
             isEditMode: false 
         }
+    },
+    async created(){
+
+        const userData = await this.fetchUserProfile()
+        this.name = userData.name
+        this.email = userData.email
+        this.interests = userData.interests
     },
     methods: {
         handleEditProfile() {
             this.isEditMode = true        
         },
-        handleUpdateProfile() {
-            this.isEditMode = false 
+        async handleUpdateProfile() {
+            const payload = {
+                name: this.name,
+                email: this.email,
+                interests: this.interests
+            } 
+
+            const resJson = await this.updateUserProfile(payload)
+            console.log(resJson)
+
+
+            this.isEditMode = false
+        },
+        async fetchUserProfile() {
+            const res = await fetch('get-profile')
+            return await res.json()
+        },
+
+        async updateUserProfile(payload){
+            const res = await fetch('update-profile', {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            return await res.json()
         }
+
     } 
 }
 
