@@ -15,17 +15,28 @@ app.use('/', express.static(__dirname + '/dist'))
 
 
 app.get('/get-profile', async function(req, res){
-    const response = {
-        name: "Billy Martinez",
-        email: "billy.martinez@gmail.com",
-        interests: "coding"
-    }
-
+    
     await client.connect()
     console.log('Connected successfuly to server')
 
+    const db = client.db(dbName)
+    const collection = db.collection(collName)
 
+    const result = await collection.findOne({id: 1})
+    console.log(result)
+    client.close()
+
+    const response = {}
+
+    if (result !== null) {
+        response = {
+            name: result.name,
+            email: result.email,
+            interests: result.interests    
+        }
+    }
     res.send(response)
+       
 
 }) 
 app.post('/update-profile', async function(req, res) {

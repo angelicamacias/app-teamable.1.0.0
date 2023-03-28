@@ -508,6 +508,11 @@ Updates a single document within the collection based on the filter
 
 1st paramter: filter = the slection criteria for the update
 2nd paramter: update = the modifications to apply 
+3rd parameter: upseret = takes a boolean value updateOne()
+    if true, updates the document if no documents match the filter
+
+
+
 
 
 
