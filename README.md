@@ -1,4 +1,4 @@
-# Life cycle development
+# Software Development Life cycle 
 
 
 ![Imagen2](https://user-images.githubusercontent.com/114703394/231704976-ead5d4e8-918f-4a70-b4aa-6c397f0a7899.png)
