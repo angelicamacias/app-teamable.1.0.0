@@ -33,15 +33,15 @@ Used as a container for other HTML elements.
 ### b  
 Makes the text blod 
 
-### <botton>  
+### botton  
 Defineas clickable button 
 
-### <i> 
+### i 
 To display text italic 
 
 ### p
 To define a paragaph 
-Browsers automatially add a single blank line before and after each <p> element. 
+Browsers automatially add a single blank line before and after each p element. 
 
 ### ul or ol Element 
 
@@ -70,7 +70,7 @@ Defines a hyperlink, used to link from one page to another.
 Only take up as much width as necessary.
 Examples: 
     b, i, img, button, etc. 
-This is a <span> element inside a paragraph
+This is a \<span> element inside a paragraph
 
 ## HTML attributes
 All HTML elements can have attributes
@@ -80,7 +80,7 @@ Provide additional info about HTML elements.
 ### href attribute
 Specifies the URL of the page the kink goes to 
 
-### <input>
+### input
 Specifies an input field where user can enter data. 
 Depending on type attribute the element is displayed in different ways. 
 
@@ -152,7 +152,7 @@ It's not a real built-in data type of JavaScript
 
 # CCS
 
-## <style>
+## \<style>
 
 Used to define style (CSS) information for a document. 
 p = the selector. Pointing to the HTMl element you want to sytle. 
@@ -218,7 +218,7 @@ This can ve donE via CSS
     Grid layout: Grid-based layout system, with rows and columns 
     Also makes it easier to design flexible web pages. 
 
-### flexboc
+### flexbox
 
 - Parent element (container)
 This div should become a flexible container 
@@ -289,16 +289,16 @@ Align the flex items vertically
 
 # Semantic elements
 
-- <header> 
+- header 
 Represetns container for introductory content or navigational links. 
 
--  <article>
+- article
 Should make sense on its own. Examples: forum, blog post, news sotry ext. 
 
-- <aside>
+- aside
 Defines content aside form the page content.
 
-- <footer>
+- footer
 Defines a footer for a document or section.
 
 
@@ -307,22 +307,21 @@ NOTE: Benefits of external CSS file
 - Better overview
 - Extenal CSS files could be reused for different HTML pages, in cas of same styling. 
 - External CSS files can be cached by the browser, which increases performance of your website. 
-======================================================================
 
-## <head>
+## \<head>
 A container for metadata about the website. 
 Is not displaued on the website. 
     -Title
     -Description 
     -Styles
     ...
-## <title>
+## \<title>
 Defines a title name for your webpage
 Shoen in: the browser's title bar of when added to favorites 
 Very important for search engine optimization (SEO)
 Use descriptive title, not just a list of words. 
 
-## <link>
+## \<link>
 Used to define a link to an external resource 
 
 **rel = required**
@@ -347,11 +346,11 @@ short for favorite icon
 it's a small 16*16 pixel icon 
 An icon associated with a particular website used on web browsers.
 
-# <meta>
+# \<meta>
 Defines metadata about an HTML document
 Not displayed on the page, but machine parasble
 
-# <html>
+# \<html>
 The root element, holding all the content of an HTML docuement. 
 Tip: include the lang attribute to define the language of your web page (for serach engine)
 
@@ -376,7 +375,7 @@ Used to slect elements when you mouse over them.
 # Write "create post" form
 
 The form element is a container for different types of input elements 
-
+```
 <form>
     <input>
     <label>
@@ -384,9 +383,9 @@ The form element is a container for different types of input elements
     <option>
     ...
 </form>
+```
 
-
-## <label>
+## \<label>
 Define a text label for the <input> tag
 To tie the elements together: 
 **for** attribute in label 
