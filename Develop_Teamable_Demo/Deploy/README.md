@@ -1,6 +1,15 @@
 # Workflow
 
-![Diagrama sin título drawio (1)](https://user-images.githubusercontent.com/114703394/231854137-c0b49bfb-73c7-4dcf-91a2-0ee239ee0a34.png)
+![Diagrama sin título drawio (1)](https://user-images.githubusercontent.com/114703394/231854354-34d06a64-c69a-4ba3-834a-0fc4c8aba5ec.png)
+
+
+
+
+
+
+
+
+
 
 
 
