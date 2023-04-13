@@ -512,6 +512,22 @@ Updates a single document within the collection based on the filter
     if true, updates the document if no documents match the filter
 
 
+### findOne()
+ 
+- Returns one document that satisfies the specified query criteria on the collection 
+- If multple documents sarisfy the query, the method returns the first document
+
+
+### null
+ 
+The value "null" means that no value exists
+
+
+## Destructuring
+
+Makes it possible to unpack values from properties from objects or arrays into distinct variables 
+
+
 
 
 
