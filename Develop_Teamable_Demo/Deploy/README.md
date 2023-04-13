@@ -1,3 +1,9 @@
+# Workflow
+
+![Diagrama sin título drawio (1)](https://user-images.githubusercontent.com/114703394/231854137-c0b49bfb-73c7-4dcf-91a2-0ee239ee0a34.png)
+
+
+
 Where to run the application? 
 
 The tester should be able to access the new app version from the broweser without doing manual steps of installation 
