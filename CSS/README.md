@@ -1,6 +1,7 @@
 ## HTML stands for Hyper Text Markup Language
 
 Why does "hyper text" mean?
+
 - Refers to links that connect web pages to one another 
 - Hypertext is a text that contains links in web pages that redirets you to other web pages.
 - These likes itserlf are called "hyperlinks"
