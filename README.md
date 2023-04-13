@@ -68,8 +68,9 @@ Scrum master: Ensures that scrum meeting happen and that they are successful.
 2) Sprint review
 3) Retrospective 
 
+![auxilioooo ahh quiero trabajo](https://user-images.githubusercontent.com/114703394/231859411-70d3fee3-8fc0-471d-9795-e3692a3f40e1.png)
 
-![relase](https://user-images.githubusercontent.com/114703394/231848394-11c3a71f-e525-4f13-a121-32c569c340ab.png)
+
 
 
 
