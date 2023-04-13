@@ -1,10 +1,9 @@
 # Workflow
 
-![Diagrama sin título drawio (1)](https://user-images.githubusercontent.com/114703394/231854354-34d06a64-c69a-4ba3-834a-0fc4c8aba5ec.png)
 
 
 
-
+![Diagrama sin título drawio (2)](https://user-images.githubusercontent.com/114703394/231858613-ddbee190-d46d-484a-a813-1f22a7f005d5.png)
 
 
 
