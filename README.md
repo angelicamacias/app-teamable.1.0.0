@@ -26,6 +26,7 @@
 - Run on servers
 - Upgrade existing software
 
+# Types of project management frameworks 
 
 ## WATERFALL
 
@@ -37,9 +38,6 @@
 
 4.- Operations: Huge preparation 
 
-
-
-# Planning 
 
 ## Agile
 Develop the applications with continuous, shor iterations (and several phases)
