@@ -124,3 +124,12 @@ HTTP handler ---> functionA()
 This is also called "mocking"
 
 Mock is a method/object that simulates the behavior or a real method/object in controlled ways
+
+
+
+
+
+
+# test flow diagram
+![Diagrama sin título drawio (3)](https://user-images.githubusercontent.com/114703394/231870100-6a22c4eb-3c62-4134-af96-4e73819d4d74.png)
+
