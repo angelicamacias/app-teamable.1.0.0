@@ -39,7 +39,7 @@
 
 
 
-
+# Planning 
 
 ## Agile
 Develop the applications with continuous, shor iterations (and several phases)
