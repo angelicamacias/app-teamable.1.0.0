@@ -45,8 +45,8 @@ Browsers automatially add a single blank line before and after each <p> element.
 
 ### ul or ol Element 
 
-<ul> to define an unordered list. 
-<ol> to define an orderd list. 
+ul to define an unordered list. 
+ol to define an orderd list. 
 
 ###  li 
 Defines  a list item 
@@ -56,10 +56,12 @@ Used inside orderd or unordered list.
 Imagenes 
 - scr attribute
 Specifies the URL ot the image.
+    
 Possible vaules:
 - An abolute URL points to anthoer web site. 
 - A relative URL points to a file within a web site. 
-### <a> 
+    
+### a 
 Defines a hyperlink, used to link from one page to another. 
 ## Types of elements
 
