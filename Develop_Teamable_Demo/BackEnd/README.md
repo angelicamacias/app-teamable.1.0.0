@@ -412,7 +412,7 @@ Adds additional contex and metadata about the request or response
 
 **Synchronous** calls are blocking 
 The request must complete, before the browser can continue with the execution 
-
+```
 |------>| request1 |------
 |                        |
 |             <-----| reponse 1|
@@ -423,12 +423,12 @@ The request must complete, before the browser can continue with the execution
 |                        |
 |             <-----| reponse 2|
 |
-
+```
 
 
 **Asynchronous** calls or requests are non-blocking 
 Tasks can run simultaneously 
-
+```
 |------>| request1 |------
 |                        |
 |         <---------------
@@ -446,7 +446,7 @@ Tasks can run simultaneously
 |------>| response2 |------
 |                        |
 |         <---------------
-
+```
 
 ## Promise
 
