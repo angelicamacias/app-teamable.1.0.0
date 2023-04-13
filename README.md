@@ -67,3 +67,10 @@ Scrum master: Ensures that scrum meeting happen and that they are successful.
     Object: Evaluating the progress, synchronzing activities and identifying impediments. 
 2) Sprint review
 3) Retrospective 
+
+
+![relase](https://user-images.githubusercontent.com/114703394/231848394-11c3a71f-e525-4f13-a121-32c569c340ab.png)
+
+
+
+
