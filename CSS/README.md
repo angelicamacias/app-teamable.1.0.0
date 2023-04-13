@@ -25,12 +25,12 @@ Examples:
     div, p, ol, ul, li, h1-h6, etc. 
 
 
-###  <div>  
+###  div 
 
 Defines a division or section on an HTML document
 Used as a container for other HTML elements. 
 
-### <b>  
+### b  
 Makes the text blod 
 
 ### <botton>  
@@ -39,20 +39,20 @@ Defineas clickable button
 ### <i> 
 To display text italic 
 
-### <p>
+### p
 To define a paragaph 
 Browsers automatially add a single blank line before and after each <p> element. 
 
-### <ul> or <ol> Element 
+### ul or ol Element 
 
 <ul> to define an unordered list. 
 <ol> to define an orderd list. 
 
-###  <li> 
+###  li 
 Defines  a list item 
 Used inside orderd or unordered list. 
 
-### </img>
+### /img
 Imagenes 
 - scr attribute
 Specifies the URL ot the image.
@@ -134,16 +134,19 @@ Functions built into JavaScript language
 Common logic that others can re-use in their own software
 
 ### Bulit-In array methods
+    
 pop() = remove last element
 push() = add new element (at the end)
 split() = splits a string into a array of substrings
+    
 ## Methods
+    
 Methods are actions that can be performed on objects. 
 Function definitions on an object. 
 ## Date object
+    
 You can use the date object and its methods to work with dates and times.
 It's not a real built-in data type of JavaScript
-================================================================
 
 # CCS
 
