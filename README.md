@@ -1,6 +1,9 @@
 # Life cycle development
 
 
+![Imagen2](https://user-images.githubusercontent.com/114703394/231704976-ead5d4e8-918f-4a70-b4aa-6c397f0a7899.png)
+
+
 Product owner 
 Tester
 Software developer
@@ -34,6 +37,10 @@ Release fo software
 3.- Testing: Testing after everything has developed
 
 4.- Operations: Huge preparation 
+
+
+
+
 
 ## Agile
 Develop the applications with continuous, shor iterations (and several phases)
