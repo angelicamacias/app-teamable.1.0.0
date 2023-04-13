@@ -1,19 +1,2 @@
-# Create UI in simple JS - initial code
-
-### <span>
-
-To wrap text 
-Much link the <p> or <div> element
-Difference is that these are block-level elements, whereas span is an inline element. 
-
-Block-Level = takes up full width
-Line = Only takes up as much width as necessary 
-
-
-
-
-1) Get value of input field object
-2) Set text of the "name" element
-
-
-display: none hides and shows elements without deleting and recreating them!
+# app arquitecure 
+![Diagrama sin título drawio](https://user-images.githubusercontent.com/114703394/231842767-3f7d7360-e171-4c35-ab65-4555b32584c5.png)
