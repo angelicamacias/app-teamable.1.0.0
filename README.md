@@ -4,25 +4,24 @@
 ![Imagen2](https://user-images.githubusercontent.com/114703394/231704976-ead5d4e8-918f-4a70-b4aa-6c397f0a7899.png)
 
 
-Product owner 
-Tester
-Software developer
-System administrator
+**Product owner** 
+- Tester
+- Software developer
+- System administrator
 
-
-Programming 
+**Programming** 
 - Software is programed by developers
 - In different progamming languages e.g. java, Python, javaScript
 - One team per app or per facture
 - New functionallty
 - Fix bugs
 
-Software Testing
+**Software Testing**
 - Test the new features
 - Test the old code/functionality
 - Testing is done by developers and dedicated tester
 
-Release fo software
+**Release fo software**
 - Build application 
 - Run on servers
 - Upgrade existing software
