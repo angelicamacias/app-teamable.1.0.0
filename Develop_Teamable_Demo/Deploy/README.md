@@ -308,5 +308,204 @@ On windows it's common to use visual install Wizards
 **root User** = User with unlimited privileges
 
 
+## End goal 
+
+The app should be available for the end users 
+
+- We developed the appliaction for our customer
+- So we want to make it accessible to these users
+
+
+## Stagin server or staging enviroment
+
+- Test server: 
+    App is less stable
+    Only test data
+    Used by testers
+
+- Staging server
+    App is stable
+    Some production data
+    Test app in a production-similar environment 
+ 
+
+
+
+### From local to production environment
+
+**Environments or Stages:**
+
+server:             server:            server:
+**Testing ----------> Staging ---------> Production** 
+134.122.86.124      125.12.86.125      192.16.16.15
+
+
+- **Production server**
+
+The final environment
+
+- App is highly stable
+- Full production data
+- Used by acutal users 
+
+
+Testing: 
+
+Test application in different stages ----> production
+
+
+# Development and deployment workflow explained
+
+## Continuous release of app changes 
+
+- Production server 
+
+
+Senior engineer: Only limited number of senior engineers should have access.
+
+Production: Needsto be up and running 24/7, needs to be secured 
+f
+
+Server administartor: Will be the one with access to the production machine
+
+### Plan the next sprint
+
+App v2
+
+- Instead we want to lock our database
+- Backend has to provide credentials to access the database 
+    username    password
+
+ 
+-> They need to work thogether, communicate 
+
+
+# Secure MongoDB database Access
+
+
+- Create user with password in the database
+- Any client needs to authenicate with this user
+
+
+## Create database users
+
+log in Mongodb: 
+
+root@web-server:~# mongosh 
+
+### Roles-vased authorization 
+- MongoDB grants access to data and commands whtorugh role-bases authorizacion 
+-A role grants privileges to perform the specified actions on resource 
+
+**Builtin Roles**
+
+- MongoDB provides builtin-in foles
+- They provide different levels of access commonly needed in a databases 
+- You can additionally creage user-defined roles
+
+gives the users permmission to admin any database
+
+
+### Password
+Password are not stored in plain text
+They are encryped. So it's unreadable or unusable by hackers
+```
+'SCRAM-SHA-1', 'SCRAM-SHA-256'
+```
+
+
+### admin 
+
+user with admin access to all DBs
+
+```
+admin> db.createUser({user: "admin", pwd: "adminpass", roles:[ {role: "userAdminAnyDatabase", db: "admin"} ]})
+{ ok: 1 }
+
+
+admin> show users
+[
+  {
+    _id: 'admin.admin',
+    userId: new UUID("9d97fc0e-7789-4146-8cac-16c2c58d4795"),
+    user: 'admin',
+    db: 'admin',
+    roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ],
+    mechanisms: [ 'SCRAM-SHA-1', 'SCRAM-SHA-256' ]
+  }
+]
+```
+### myapp
+
+compay_db
+
+myapp users hsould have restriced access only to the company_db database
+
+
+node ---- myapp username and password--->  DB admin, company_db DB
+
+```
+
+admin> use company_db
+switched to db company_db
+company_db>  db.createUser({user: "myapp", pwd: "blanquito", roles: [{ role: "readWrite", db:"company_db"}]})
+{ ok: 1 }
+
+```
+
+## MongoDB configuration file 
+
+We can configure MongoDB instances ar startup 
+
+When you unstall mongoDB with a package manage a default configuration file is provided as part of the installation 
+ 
+ We can overwrite the default configurations
+
+
+
+**STEP ONE**
+
+Open file in a text editor to edit the content 
+    - Usually GUIs on server
+
+```
+security:
+  authorization: "enabled"
+```
+
+
+## Test configured aythentication 
+
+We have secured out database by enavling authentication 
+- Admin user that can administer all databases 
+- Dedicated user for company_db database
+
+```
+admin> use company_db
+switched to db company_db
+company_db> db.auth("myapp", "blanquito")
+{ ok: 1 }
+```
+
+# Configure database access with credentials in backend application
+
+
+## Implement bakend changes
+
+
+How to provide the crdentials: 
+
+```
+mongodb://username:password@db-hostname:db-port
+```
+
+Whish is the authentication database? 
+
+
+
+
+
+
+
 
 

@@ -16,3 +16,9 @@ The backend receives the POST request to the /update-profile endpoint with the n
 After the database is updated, the backend sends a response to the frontend indicating whether the update was successful or not.
 
 Once the update is completed, the frontend updates the user interface by hiding the edit form and showing the user profile information with the updated data.
+
+
+
+
+
+189.231.121.232
