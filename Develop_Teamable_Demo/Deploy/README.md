@@ -492,20 +492,94 @@ company_db> db.auth("myapp", "blanquito")
 
 ## Implement bakend changes
 
-
+How we can authenticate our backend client, 
 How to provide the crdentials: 
 
 ```
-mongodb://username:password@db-hostname:db-port
+const url = 'mongodb://myapp:blanquito@127.0.0.1:27017/mydbname?authSource=company_db'
 ```
+
+
+- The protocol: mongodb
+- Which database server: 127.0.0.1:27017
+- The credential: myapp:blanquito 
+- The authentication database: authSource=company_db
+
 
 Whish is the authentication database? 
 
+Specify the database which actually contains that provided user. 
+
+
+### authSource 
+
+- Specify the database name in which you created the user 
+- The database you create  the use in is the authentication database for the user
+
+
+## Build new application version 
 
 
 
+# Introduction to version control 
+
+- Developers working on the same code 
+
+- Code is hosted centrally on the internet 
+- Every developer has an entire copy of the code locally
+- Code is fetched from remote repo and pushed 
 
 
+- BEST PRACTICE: push and pull often from remote repo 
+
+- Braking changes: doesn't affect you until you pulled the new code. 
+
+Every  code change and file is tracked
+
+## Basic concepts of git 
+
+- Remote git repository: where the code lives
+- Local git repository: local copy of the code 
+- History: of code changes (git log)
+
+- Staging: changes to commit
+- Git clients: to execute git commands
 
 
+## Set up remote git repository 
 
+- .gitignore file
+
+Tells git which files and folders to ignore when you make a commit 
+
+A text file, where each line contains a pattern for files/direcotries to ignore 
+
+
+**Merge** merges your local changes and remote changes and that will create another commit history record 
+
+**Rebase** Put your changes above all new remote changes and rewrite commit history, so you commit history will be much cleaner 
+
+```
+git pull -r
+```
+
+
+## Resolving merage confilicts
+
+merge conflict: 
+
+git dosen't know how to automatically merge those changes 
+
+
+## Concepts of branches 
+
+- When initializing a git rep, a default branch is created (main branch)
+
+Best practice: 1 branch per bugfix or feature
+Developers can commit withour worrying to break main branch 
+
+
+git chechout main 
+\
+
+git chechout -b newBranch
